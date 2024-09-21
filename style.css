@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Red Hat Text", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+:root {
+  /*Primary*/
+
+  --Grayish_blue: hsl(237, 18%, 59%);
+  --Soft_red: hsl(345, 95%, 68%);
+
+  /*Neutral*/
+
+  --White: hsl(0, 0%, 100%);
+  --Dark_desaturated_blue: hsl(236, 21%, 26%);
+  --Very_dark_blue_1: hsl(235, 16%, 14%);
+  --Very_dark_blue_2: hsl(234, 17%, 12%);
+}
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background: url(images/bg-stars.svg),
+    linear-gradient(var(--Dark_desaturated_blue), var(--Very_dark_blue_1));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1{
+    color: var(--White);
+}
+.time_container{
+    display: flex;
+    gap: 20PX;
+}
+.only_time{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10PX;
+}
+.only_time h2{
+    color: var(--Soft_red);
+    font-size: 2rem;
+    background-color: var( --Very_dark_blue_2);
+    padding: 5PX;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px var(--White);
+}
+.only_time p{
+    color: var(--Grayish_blue);
+    font-weight: 700;
+}
+.social_media{
+    width: 100%;
+    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20PX;
+  
+  
+}
+.social_media i{
+    cursor: pointer;
+    color: var(--Grayish_blue);
+    font-size: 30px;
+    transition: 0.5s all;
+}
+.social_media i:hover{
+    color: var(--Soft_red);
+}
+@media only screen and (max-width: 600px){
+    .only_time h2{
+        color: var(--Soft_red);
+        font-size: 1.5rem;
+        background-color: var( --Very_dark_blue_2);
+        padding: 5PX;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0px 5px 10px var(--White);
+    }
+}
